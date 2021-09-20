@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es5",                          
+    "module": "esnext",                     
+    "lib": [
+      "dom",
+      "es6",
+      "esnext"
+    ],                             
+    "jsx": "react-jsx",                               
+    "importHelpers": true,     
+    "strict": true,    
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+  },
+ "include": ["./src/**/*"]
+}
