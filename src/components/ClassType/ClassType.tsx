@@ -107,7 +107,7 @@ const VariablesDetail: React.FC<{variables:any}> = ({variables}) =>{
 
   const columns = [
     { title: 'Nombre', dataIndex: 'name', key: 'name' },
-    { title: 'Estatus ', dataIndex: 'status', key: 'status' },
+    { title: 'Cohesivo ', dataIndex: 'status', key: 'status' },
 
   ];
   useEffect(() => {
