@@ -6,7 +6,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const ForkTsCheckerWebpackPlugin  = require("fork-ts-checker-webpack-plugin");
 const ESLintPlugin  = require("eslint-webpack-plugin");
-const { HotModuleReplacementPlugin }  =require( "webpack");
+
 
 
 const ROOT = path.resolve(__dirname, '..');
@@ -110,12 +110,8 @@ module.exports = {
           template: path.resolve(__dirname, "../public", "index.html"),
           favicon: './public/favicon.ico'
         }),
-        new HotModuleReplacementPlugin(),
         new ForkTsCheckerWebpackPlugin({
           async: false,
-        }),
-        new ESLintPlugin({
-          extensions: ["js", "jsx", "ts", "tsx"],
         }),
 
         new CopyWebpackPlugin({
